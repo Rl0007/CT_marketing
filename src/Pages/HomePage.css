@@ -1,0 +1,53 @@
+.Homepage {
+  z-index: -1;
+}
+.Homepage_image {
+  max-width: 100vw;
+  margin-top: -5rem;
+  z-index: -1;
+}
+.title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  z-index: 1;
+  right: 30%;
+  top: 20%;
+}
+.los,
+.mountain {
+  font-size: 6rem;
+  /* padding-top: 0.5rem; */
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-weight: 600;
+}
+.los {
+  color: rgb(47, 47, 47);
+  /* background-color: aliceblue; */
+}
+.mountain {
+  color: rgb(18, 55, 73);
+
+  /* background-color: pink; */
+}
+@media only screen and (max-width: 450px) {
+  .los,
+  .mountain {
+    font-size: 3rem;
+  }
+  .title {
+    right: 15%;
+    top: 30%;
+  }
+  .Homepage_image {
+    /* max-height: 100vh; */
+    /* max-width: auto; */
+    height: 100vh;
+    object-fit: cover;
+    margin-top: 0px;
+    /* opacity: 0.1; */
+  }
+}

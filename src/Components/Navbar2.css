@@ -1,0 +1,61 @@
+.Navbar2 {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  background-color: transparent;
+  padding-top: 0.5rem;
+}
+.Logo2 {
+  display: flex;
+  flex: 1;
+  /* background-color: pink; */
+  /* padding-top: 20px; */
+  align-items: center;
+  justify-content: center;
+  z-index: inherit;
+}
+.Profile_photo2 {
+  border-radius: 50%;
+  /* background-color: aqua; */
+  max-width: 50px;
+}
+.Links2 {
+  display: flex;
+  flex-direction: row;
+  /* background-color: peachpuff; */
+  flex: 1;
+  justify-content: space-evenly;
+  z-index: inherit;
+}
+.history2,
+.climb2 {
+  /* font-size: large; */
+  /* color: white; */
+  /* border-bottom: 1px solid black; */
+  font-size: 1.5rem;
+  color: black;
+}
+.history2::after,
+.climb2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: black;
+  transition: width 0.3s;
+}
+
+.history2:hover::after,
+.climb2:hover::after {
+  width: 100%;
+}
+@media only screen and (max-width: 450px) {
+  /* .Profile_photo2{
+  max-width: ;
+} */
+  .history2,
+  .climb2 {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+}
